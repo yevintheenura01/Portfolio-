@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Sora:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 14% 15%,
+      rgba(103, 232, 249, 0.2) 0,
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 82% 24%,
+      rgba(45, 212, 191, 0.18) 0,
+      transparent 38%
+    ),
+    linear-gradient(140deg, #05080f 0%, #070e1a 48%, #03111a 100%);
+  color: #e2e8f0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(255, 255, 255, 0.07) 1px,
+    transparent 0
+  );
+  background-size: 26px 26px;
+  opacity: 0.28;
+  z-index: -1;
+}
+
+.glass-card {
+  border: 1px solid rgba(226, 232, 240, 0.15);
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.62),
+    rgba(15, 23, 42, 0.36)
+  );
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.section-kicker {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: rgb(165 243 252);
+}
+
+.section-title {
+  margin-top: 0.8rem;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  line-height: 1.2;
+  color: #fff;
+}
