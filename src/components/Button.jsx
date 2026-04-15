@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import { cn } from "../utils/helpers.js";
 
-function Button({ href, children, className, variant = "primary" }) {
+function Button({
+  href = "#",
+  onClick,
+  children,
+  className,
+  variant = "primary",
+}) {
   const baseClass =
     "inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors";
 
@@ -12,11 +18,19 @@ function Button({ href, children, className, variant = "primary" }) {
       "border-slate-300/20 bg-white/5 text-slate-200 hover:border-slate-200/40 hover:bg-white/10",
   };
 
+  const handleClick = (e) => {
+    if (onClick) {
+      e.preventDefault();
+      onClick(e);
+    }
+  };
+
   return (
     <motion.a
       whileHover={{ y: -2 }}
       whileTap={{ scale: 0.98 }}
       href={href}
+      onClick={handleClick}
       className={cn(baseClass, variants[variant], className)}
     >
       {children}

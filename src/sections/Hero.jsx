@@ -60,7 +60,7 @@ function Hero() {
           className="mx-auto w-full max-w-xs rounded-3xl border border-white/20 bg-white/5 p-3"
         >
           <img
-            src="/images/profile.png"
+            src="/images/profile.jpeg"
             alt="Yevin Theenura"
             className="h-full w-full rounded-2xl object-cover"
           />
