@@ -5,15 +5,18 @@ import { revealUp } from "../utils/helpers.js";
 
 function Projects() {
   return (
-    <section id="projects" className="mx-auto w-full max-w-6xl px-4 py-16">
+    <section
+      id="projects"
+      className="mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 py-20"
+    >
       <motion.div {...revealUp()}>
         <p className="section-kicker">Projects</p>
-        <h2 className="section-title">
+        <h2 className="section-title text-4xl sm:text-5xl">
           Featured projects that demonstrate real capability
         </h2>
       </motion.div>
 
-      <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <ProjectCard
             key={project.title}

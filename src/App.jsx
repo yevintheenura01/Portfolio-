@@ -1,44 +1,27 @@
-import { AnimatePresence } from "framer-motion";
-import { PageProvider, usePageContext } from "./context/PageContext.jsx";
 import Navbar from "./components/Navbar.jsx";
-import PageIndicator from "./components/PageIndicator.jsx";
-import useKeyboardNavigation from "./hooks/useKeyboardNavigation.js";
-import HeroPage from "./pages/HeroPage.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
-import SkillsPage from "./pages/SkillsPage.jsx";
-import ProjectsPage from "./pages/ProjectsPage.jsx";
-import ExperiencePage from "./pages/ExperiencePage.jsx";
-import ServicesPage from "./pages/ServicesPage.jsx";
-import ContactPage from "./pages/ContactPage.jsx";
-
-function AppContent() {
-  const { currentPage } = usePageContext();
-  useKeyboardNavigation();
-
-  const pages = [
-    <HeroPage key="hero" />,
-    <AboutPage key="about" />,
-    <SkillsPage key="skills" />,
-    <ProjectsPage key="projects" />,
-    <ExperiencePage key="experience" />,
-    <ServicesPage key="services" />,
-    <ContactPage key="contact" />,
-  ];
-
-  return (
-    <div className="relative min-h-screen overflow-x-hidden overflow-y-auto text-slate-100 bg-slate-950">
-      <Navbar />
-      <AnimatePresence mode="wait">{pages[currentPage]}</AnimatePresence>
-      <PageIndicator />
-    </div>
-  );
-}
+import Footer from "./components/Footer.jsx";
+import ScrollProgress from "./components/ScrollProgress.jsx";
+import ParallaxBackground from "./components/ParallaxBackground.jsx";
+import MouseSpotlight from "./components/MouseSpotlight.jsx";
+import SectionRail from "./components/SectionRail.jsx";
+import Home from "./pages/Home.jsx";
+import { ThemeProvider } from "./components/ThemeProvider.jsx";
 
 function App() {
   return (
-    <PageProvider>
-      <AppContent />
-    </PageProvider>
+    <ThemeProvider>
+      <div className="relative min-h-screen overflow-x-hidden transition-colors duration-300 text-slate-900 dark:text-slate-100 bg-white dark:bg-slate-950">
+        <ParallaxBackground />
+        <MouseSpotlight />
+        <SectionRail />
+        <ScrollProgress />
+        <Navbar />
+        <main>
+          <Home />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

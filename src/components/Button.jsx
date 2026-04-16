@@ -9,13 +9,13 @@ function Button({
   variant = "primary",
 }) {
   const baseClass =
-    "inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition-colors";
+    "inline-flex items-center gap-2 rounded-full border px-6 py-3 text-base font-semibold transition-all duration-300";
 
   const variants = {
     primary:
-      "border-cyan-300/40 bg-cyan-300/15 text-cyan-100 hover:border-cyan-200 hover:bg-cyan-300/25",
+      "dark:border-cyan-300/40 dark:bg-cyan-300/15 dark:text-cyan-100 dark:hover:border-cyan-200 dark:hover:bg-cyan-300/25 border-indigo-400 bg-indigo-100 text-indigo-700 hover:bg-indigo-200",
     ghost:
-      "border-slate-300/20 bg-white/5 text-slate-200 hover:border-slate-200/40 hover:bg-white/10",
+      "dark:border-slate-300/20 dark:bg-white/5 dark:text-slate-200 dark:hover:border-slate-200/40 dark:hover:bg-white/10 border-indigo-300 bg-white/50 text-indigo-700 hover:bg-indigo-100",
   };
 
   const handleClick = (e) => {
