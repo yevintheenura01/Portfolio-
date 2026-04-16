@@ -1,43 +1,21 @@
 # Portfolio
 
-Interactive, multi-page portfolio built with React, Vite, TailwindCSS, and Framer Motion.
+Minimal, modern one-page portfolio built with React, Vite, TailwindCSS, and Framer Motion.
 
 ## Features
 
-✨ **Interactive Multi-Page Experience** - Navigate through pages instead of scrolling
-
-- Smooth page transitions with Framer Motion
-- 7 unique pages: Home → About → Skills → Projects → Experience → Services → Contact
-
-🎨 **Eye-Catching Design**
-
+- One-page scroll experience with sections that reveal one by one
 - Dark glassmorphism aesthetic
-- Animated elements and hover effects
-- Gradient progress bars for skills
-- Interactive project cards with screenshots
-- Animated page navigation indicators
-
-⌨️ **Multiple Navigation Methods**
-
-- Next/Back buttons in navbar
-- Page indicator dots at bottom (clickable)
-- Keyboard navigation using arrow keys (← →)
-- Direct page selection from navbar links
-
-🚀 **Rich Animations**
-
-- Page transitions with stagger effects
-- Animated component reveals
-- Hover scales and glows
-- Form submission feedback
-- Rotating service icons
+- Animated component reveals and hover effects
+- Animated skill bars and project cards
+- Contact form with visual feedback
+- Clean anchor-based navigation
 
 ## Stack
 
 - React + Vite
 - TailwindCSS
 - Framer Motion
-- Context API for state management
 
 ## Run Locally
 
@@ -46,13 +24,13 @@ npm install
 npm run dev
 ```
 
-Visit `http://localhost:5173` and explore the pages!
+Visit `http://localhost:5173` and scroll through the sections.
 
 ## Navigation Guide
 
-### Pages
+### Sections
 
-1. **Home** - Welcome and introduction with profile image
+1. **Hero** - Welcome and introduction with profile image
 2. **About** - Personal bio, education, and career goals
 3. **Skills** - Technical skills with animated progress bars
 4. **Projects** - Featured projects with live demos and source links
@@ -60,12 +38,10 @@ Visit `http://localhost:5173` and explore the pages!
 6. **Services** - Services offered for freelance projects
 7. **Contact** - Contact form and social media links
 
-### Navigation Methods
+### Navigation
 
-- **Navbar Buttons**: Click "Back" or "Next" to move between pages
-- **Page Indicators**: Click dots at the bottom to jump to any page
-- **Keyboard Shortcuts**: Use arrow keys (← →) to navigate
-- **Navbar Links**: Click page names to jump directly
+- Click the navbar links to jump to any section
+- Scroll naturally to reveal the next section
 
 ## Build
 
@@ -79,22 +55,11 @@ npm run preview
 ```text
 portfolio/
 ├── src/
-│   ├── context/
-│   │   └── PageContext.jsx          # Page state management
-│   ├── pages/
-│   │   ├── HeroPage.jsx
-│   │   ├── AboutPage.jsx
-│   │   ├── SkillsPage.jsx
-│   │   ├── ProjectsPage.jsx
-│   │   ├── ExperiencePage.jsx
-│   │   ├── ServicesPage.jsx
-│   │   └── ContactPage.jsx
 │   ├── components/
 │   │   ├── Navbar.jsx
 │   │   ├── Button.jsx
 │   │   ├── Footer.jsx
-│   │   └── PageIndicator.jsx
-│   ├── sections/                    # Legacy section components
+│   ├── sections/
 │   ├── data/
 │   ├── hooks/
 │   ├── utils/
@@ -111,17 +76,11 @@ portfolio/
 - Update skill names/levels in `src/data/skills.js`
 - Modify projects in `src/data/projects.js`
 - Edit experience/education in `src/data/experience.js`
-- Customize contact links in `src/pages/ContactPage.jsx`
-
-### Add More Pages
-
-1. Create new page component in `src/pages/`
-2. Import and add to pages array in `src/App.jsx`
-3. Update PageContext with new page name
+- Customize contact links in `src/sections/Contact.jsx`
 
 ### Change Colors
 
-- Modify color classes in page components
+- Modify color classes in section components
 - Update TailwindCSS config in `tailwind.config.js`
 - Adjust gradient colors in CSS
 
@@ -143,8 +102,8 @@ netlify deploy --prod --dir dist
 
 ## Performance
 
-- Bundle size: 343 KB (106 KB gzipped)
-- Fast page transitions powered by Framer Motion
+- Bundle size: 328 KB (103 KB gzipped)
+- Smooth scroll-reveal transitions powered by Framer Motion
 - Optimized assets and lazy loading
 
 ## License
