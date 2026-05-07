@@ -51,6 +51,34 @@ function LinkedinIcon() {
 function Contact() {
   const { toast, showToast } = useToast();
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch("https://formspree.io/f/mwvyqdgj", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        showToast(
+          "Message sent successfully! I'll get back to you soon.",
+          "success",
+        );
+        form.reset();
+      } else {
+        showToast("Failed to send message. Please try again.", "error");
+      }
+    } catch (error) {
+      showToast("Error sending message. Please try email instead.", "error");
+    }
+  };
+
   return (
     <>
       <Toast message={toast?.message} type={toast?.type} />
@@ -148,21 +176,24 @@ function Contact() {
 
           <form
             className="mt-10 grid gap-5 md:grid-cols-2"
-            onSubmit={(event) => event.preventDefault()}
+            onSubmit={handleSubmit}
           >
             <input
               type="text"
+              name="name"
               placeholder="Name"
               required
               className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-indigo-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none"
             />
             <input
               type="email"
+              name="email"
               placeholder="Email"
               required
               className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-indigo-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none"
             />
             <textarea
+              name="message"
               placeholder="Message"
               rows={5}
               required
