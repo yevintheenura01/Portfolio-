@@ -4,10 +4,11 @@ import { useThemeContext } from "./ThemeProvider.jsx";
 
 const links = [
   { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
+  { label: "Reflections", href: "#reflections" },
+  { label: "Career Plan", href: "#career-plan" },
+  { label: "CV", href: "#experience" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -74,7 +75,7 @@ function Navbar() {
           href="#hero"
           className="font-display text-2xl tracking-wide dark:text-white text-indigo-900 transition-colors hover:dark:text-cyan-200 hover:text-indigo-600"
         >
-          YN Portfolio
+          Portfolio
         </a>
 
         <div className="hidden items-center gap-7 text-sm font-medium dark:text-slate-200 text-slate-900 lg:flex">

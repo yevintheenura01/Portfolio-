@@ -1,48 +1,45 @@
 const projects = [
   {
-    title: "MERN E-commerce Platform",
+    title: "Rice Mill Management System",
     description:
-      "A scalable e-commerce application with product management, cart, authentication, and secure checkout flow.",
-    tags: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+      "Full-stack web application for managing rice mill operations. Features include inventory tracking, order management, and production scheduling with UI design in Figma.",
+    tags: ["MERN Stack", "React", "MongoDB", "Node.js", "Figma"],
     demo: "#",
     source: "#",
-    image: "/images/projects/project-1.png",
+    image: "/images/projects/rice-mill.png",
   },
   {
-    title: "Voice-Enabled Product Search",
+    title: "Clothing Website",
     description:
-      "An AI-assisted product finder using speech input and intent matching to improve search speed and accessibility.",
-    tags: ["React", "Web Speech API", "Node.js", "NLP"],
+      "E-commerce platform for clothing sales built with modern web technologies. Implemented responsive design and user-friendly interface using React and Vite for optimal performance.",
+    tags: ["React", "Vite", "MERN Stack", "Tailwind CSS", "MongoDB"],
     demo: "#",
     source: "#",
-    image: "/images/projects/project-2.png",
+    image: "/images/projects/clothing-website.png",
   },
   {
-    title: "Accident Detection System",
+    title: "Online Bus Ticket Reservation System",
     description:
-      "A research-focused ML system that detects road accidents from visual data and triggers rapid alerts for response teams.",
-    tags: ["Python", "OpenCV", "TensorFlow", "Flask"],
+      "Object-oriented programming project featuring a web-based bus ticket booking system. Built using Java web technologies with Apache Tomcat server for ticket management and reservations.",
+    tags: [
+      "Java",
+      "OOP",
+      "Apache Tomcat",
+      "Web Technologies",
+      "Database Design",
+    ],
     demo: "#",
     source: "#",
-    image: "/images/projects/project-3.png",
+    image: "/images/projects/bus-booking.png",
   },
   {
-    title: "Heart Disease Prediction",
+    title: "Note App",
     description:
-      "A supervised learning model with feature engineering and evaluation metrics to predict heart disease risk.",
-    tags: ["Python", "Scikit-learn", "Pandas", "NumPy"],
+      "Mobile application for note-taking and organization. Developed using Kotlin for Android platform with intuitive UI and local storage capabilities.",
+    tags: ["Kotlin", "Android", "Mobile Development", "UI/UX Design"],
     demo: "#",
     source: "#",
-    image: "/images/projects/project-4.png",
-  },
-  {
-    title: "JWT Auth System",
-    description:
-      "A reusable auth starter with secure registration, login, role-based access, and token refresh handling.",
-    tags: ["Node.js", "Express", "MongoDB", "JWT"],
-    demo: "#",
-    source: "#",
-    image: "/images/projects/project-5.png",
+    image: "/images/projects/note-app.png",
   },
 ];
 
