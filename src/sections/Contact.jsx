@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { revealUp } from "../utils/helpers.js";
+import { ResumeButton } from "../components/Toast.jsx";
+import { useToast } from "../hooks/useToast.js";
+import { Toast } from "../components/Toast.jsx";
 
 function MailIcon() {
   return (
@@ -46,126 +49,135 @@ function LinkedinIcon() {
 }
 
 function Contact() {
+  const { toast, showToast } = useToast();
+
   return (
-    <section
-      id="contact"
-      className="mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 py-20"
-    >
-      <motion.div
-        {...revealUp()}
-        className="glass-card w-full rounded-[2rem] p-10 sm:p-14"
+    <>
+      <Toast message={toast?.message} type={toast?.type} />
+      <section
+        id="contact"
+        className="mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 py-20"
       >
-        <p className="section-kicker">Contact</p>
-        <h2 className="section-title max-w-2xl text-4xl sm:text-5xl">
-          Let us connect for opportunities
-        </h2>
-        <p className="mt-6 max-w-4xl text-lg leading-8 dark:text-slate-300 text-slate-700 transition-colors duration-300">
-          I am open to internships, remote roles, and freelance collaborations
-          in web development and AI/ML projects.
-        </p>
-
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4 text-base dark:text-slate-200 text-slate-700 transition-colors duration-300">
-          <a
-            className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
-            href="mailto:yevintheenura.dev@gmail.com"
-          >
-            <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
-              <MailIcon />
-            </span>
-            <span>
-              <span className="block text-xs uppercase tracking-[0.2em] dark:text-slate-400 text-slate-600 transition-colors duration-300">
-                Email
-              </span>
-              <span className="block text-sm dark:text-slate-100 text-slate-900 transition-colors duration-300">
-                don.yevin.dev@gmail.com
-              </span>
-            </span>
-          </a>
-          <a
-            className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
-            href="tel:+94776283842"
-          >
-            <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
-              <PhoneIcon />
-            </span>
-            <span>
-              <span className="block text-xs uppercase tracking-[0.2em] dark:text-slate-400 text-slate-600 transition-colors duration-300">
-                Phone
-              </span>
-              <span className="block text-sm dark:text-slate-100 text-slate-900 transition-colors duration-300">
-                +94 77 628 3842
-              </span>
-            </span>
-          </a>
-          <a
-            className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
-            href="https://github.com/yevintheenura01"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
-              <GithubIcon />
-            </span>
-            <span>
-              <span className="block text-xs uppercase tracking-[0.2em] dark:text-slate-400 text-slate-600 transition-colors duration-300">
-                GitHub
-              </span>
-              <span className="block text-sm dark:text-slate-100 text-slate-900 transition-colors duration-300">
-                @yevintheenura01
-              </span>
-            </span>
-          </a>
-          <a
-            className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
-            href="https://www.linkedin.com/in/yevin-theenura-01960a223/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
-              <LinkedinIcon />
-            </span>
-            <span>
-              <span className="block text-xs uppercase tracking-[0.2em] dark:text-slate-400 text-slate-600 transition-colors duration-300">
-                LinkedIn
-              </span>
-              <span className="block text-sm dark:text-slate-100 text-slate-900 transition-colors duration-300">
-                Yevin Theenura
-              </span>
-            </span>
-          </a>
-        </div>
-
-        <form
-          className="mt-10 grid gap-5 md:grid-cols-2"
-          onSubmit={(event) => event.preventDefault()}
+        <motion.div
+          {...revealUp()}
+          className="glass-card w-full rounded-[2rem] p-10 sm:p-14"
         >
-          <input
-            type="text"
-            placeholder="Name"
-            required
-            className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-indigo-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none"
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            required
-            className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-indigo-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none"
-          />
-          <textarea
-            placeholder="Message"
-            rows={5}
-            required
-            className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-indigo-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none md:col-span-2"
-          />
-          <button
-            type="submit"
-            className="rounded-full border transition-all duration-300 px-6 py-3 text-base font-semibold dark:border-cyan-300/35 dark:bg-cyan-300/15 dark:text-cyan-100 dark:hover:bg-cyan-300/25 border-indigo-400 bg-indigo-100 text-indigo-700 hover:bg-indigo-200 md:col-span-2 md:justify-self-start"
+          <p className="section-kicker">Contact</p>
+          <h2 className="section-title max-w-2xl text-4xl sm:text-5xl">
+            Let us connect for opportunities
+          </h2>
+          <p className="mt-6 max-w-4xl text-lg leading-8 dark:text-slate-300 text-slate-700 transition-colors duration-300">
+            I am open to internships, remote roles, and freelance collaborations
+            in web development and AI/ML projects.
+          </p>
+
+          <div className="mt-8 flex flex-col gap-6">
+            <ResumeButton showToast={showToast} />
+          </div>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4 text-base dark:text-slate-200 text-slate-700 transition-colors duration-300">
+            <a
+              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+              href="mailto:yevintheenura.dev@gmail.com"
+            >
+              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
+                <MailIcon />
+              </span>
+              <span>
+                <span className="block text-xs uppercase tracking-[0.2em] dark:text-slate-400 text-slate-600 transition-colors duration-300">
+                  Email
+                </span>
+                <span className="block text-sm dark:text-slate-100 text-slate-900 transition-colors duration-300">
+                  don.yevin.dev@gmail.com
+                </span>
+              </span>
+            </a>
+            <a
+              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+              href="tel:+94776283842"
+            >
+              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
+                <PhoneIcon />
+              </span>
+              <span>
+                <span className="block text-xs uppercase tracking-[0.2em] dark:text-slate-400 text-slate-600 transition-colors duration-300">
+                  Phone
+                </span>
+                <span className="block text-sm dark:text-slate-100 text-slate-900 transition-colors duration-300">
+                  +94 77 628 3842
+                </span>
+              </span>
+            </a>
+            <a
+              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+              href="https://github.com/yevintheenura01"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
+                <GithubIcon />
+              </span>
+              <span>
+                <span className="block text-xs uppercase tracking-[0.2em] dark:text-slate-400 text-slate-600 transition-colors duration-300">
+                  GitHub
+                </span>
+                <span className="block text-sm dark:text-slate-100 text-slate-900 transition-colors duration-300">
+                  @yevintheenura01
+                </span>
+              </span>
+            </a>
+            <a
+              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+              href="https://www.linkedin.com/in/yevin-theenura-01960a223/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
+                <LinkedinIcon />
+              </span>
+              <span>
+                <span className="block text-xs uppercase tracking-[0.2em] dark:text-slate-400 text-slate-600 transition-colors duration-300">
+                  LinkedIn
+                </span>
+                <span className="block text-sm dark:text-slate-100 text-slate-900 transition-colors duration-300">
+                  Yevin Theenura
+                </span>
+              </span>
+            </a>
+          </div>
+
+          <form
+            className="mt-10 grid gap-5 md:grid-cols-2"
+            onSubmit={(event) => event.preventDefault()}
           >
-            Send Message
-          </button>
-        </form>
-      </motion.div>
-    </section>
+            <input
+              type="text"
+              placeholder="Name"
+              required
+              className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-indigo-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-indigo-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none"
+            />
+            <textarea
+              placeholder="Message"
+              rows={5}
+              required
+              className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-indigo-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none md:col-span-2"
+            />
+            <button
+              type="submit"
+              className="rounded-full border transition-all duration-300 px-6 py-3 text-base font-semibold dark:border-cyan-300/35 dark:bg-cyan-300/15 dark:text-cyan-100 dark:hover:bg-cyan-300/25 border-indigo-400 bg-indigo-100 text-indigo-700 hover:bg-indigo-200 md:col-span-2 md:justify-self-start"
+            >
+              Send Message
+            </button>
+          </form>
+        </motion.div>
+      </section>
+    </>
   );
 }
 

@@ -4,12 +4,14 @@ import ScrollProgress from "./components/ScrollProgress.jsx";
 import ParallaxBackground from "./components/ParallaxBackground.jsx";
 import MouseSpotlight from "./components/MouseSpotlight.jsx";
 import SectionRail from "./components/SectionRail.jsx";
+import { WelcomePopup } from "./components/WelcomePopup.jsx";
 import Home from "./pages/Home.jsx";
 import { ThemeProvider } from "./components/ThemeProvider.jsx";
 
 function App() {
   return (
     <ThemeProvider>
+      <WelcomePopup />
       <div className="relative min-h-screen overflow-x-hidden transition-colors duration-300 text-slate-900 dark:text-slate-100 bg-white dark:bg-slate-950">
         <ParallaxBackground />
         <MouseSpotlight />

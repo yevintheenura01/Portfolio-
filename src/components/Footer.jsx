@@ -1,3 +1,6 @@
+import { useToast } from "../hooks/useToast.js";
+import { Toast, ResumeButton } from "./Toast.jsx";
+
 function GithubIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4">
@@ -21,39 +24,45 @@ function LinkedinIcon() {
 }
 
 function Footer() {
+  const { toast, showToast } = useToast();
+
   return (
-    <footer className="mx-auto w-full max-w-7xl px-4 pb-10 pt-14 text-base dark:text-slate-400 text-slate-700 transition-colors duration-300">
-      <div className="glass-card flex flex-col gap-4 rounded-[1.75rem] px-7 py-6 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p className="dark:text-white text-slate-800">
-            Building intelligent products for real-world impact.
-          </p>
-          <p className="mt-1 text-xs dark:text-slate-500 text-slate-600">
-            © {new Date().getFullYear()} Yevin Theenura
-          </p>
+    <>
+      <Toast message={toast?.message} type={toast?.type} />
+      <footer className="mx-auto w-full max-w-7xl px-4 pb-10 pt-14 text-base dark:text-slate-400 text-slate-700 transition-colors duration-300">
+        <div className="glass-card flex flex-col gap-6 rounded-[1.75rem] px-7 py-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="dark:text-white text-slate-800">
+              Building intelligent products for real-world impact.
+            </p>
+            <p className="mt-1 text-xs dark:text-slate-500 text-slate-600">
+              © {new Date().getFullYear()} Yevin Theenura
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <ResumeButton showToast={showToast} />
+            <a
+              href="https://github.com/yevintheenura01"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border transition-all duration-300 px-4 py-2 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+            >
+              <GithubIcon />
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yevin-theenura-01960a223/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border transition-all duration-300 px-4 py-2 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+            >
+              <LinkedinIcon />
+              LinkedIn
+            </a>
+          </div>
         </div>
-        <div className="flex gap-3">
-          <a
-            href="https://github.com/yevintheenura01"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border transition-all duration-300 px-4 py-2 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
-          >
-            <GithubIcon />
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/yevin-theenura-01960a223/"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border transition-all duration-300 px-4 py-2 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
-          >
-            <LinkedinIcon />
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }
 

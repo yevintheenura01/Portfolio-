@@ -250,3 +250,24 @@ html:not(.dark) .section-title {
     transform: translateY(8px);
   }
 }
+
+/* Glitch background effect for popup */
+.glitch-bg {
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(34, 211, 238, 0.1) 0px,
+    rgba(34, 211, 238, 0.05) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+  animation: glitch-scan 0.8s linear infinite;
+}
+
+@keyframes glitch-scan {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}

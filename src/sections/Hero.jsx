@@ -18,7 +18,7 @@ function Hero() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-sm uppercase tracking-[0.3em] dark:text-cyan-200 text-indigo-600 transition-colors duration-300"
           >
-            Software Engineer | AI/ML Enthusiast
+            Full-Stack Developer | UI/UX Designer
           </motion.p>
 
           <motion.h1
@@ -37,8 +37,9 @@ function Hero() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
             className="mt-6 max-w-2xl text-xl dark:text-slate-300 text-slate-800 transition-colors duration-300"
           >
-            I build intelligent, scalable web applications and machine learning
-            solutions.
+            IT undergraduate with expertise in full-stack web development (MERN
+            stack), UI/UX design, and graphic design. Passionate about creating
+            intuitive applications that solve real-world problems.
           </motion.p>
 
           <motion.div
