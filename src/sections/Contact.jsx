@@ -105,10 +105,10 @@ function Contact() {
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4 text-base dark:text-slate-200 text-slate-700 transition-colors duration-300">
             <a
-              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-green-300 bg-green-100 hover:bg-green-100"
               href="mailto:yevintheenura.dev@gmail.com"
             >
-              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
+              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-green-100 text-green-700 transition-all duration-300">
                 <MailIcon />
               </span>
               <span>
@@ -121,10 +121,10 @@ function Contact() {
               </span>
             </a>
             <a
-              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-green-300 bg-green-100 hover:bg-green-100"
               href="tel:+94776283842"
             >
-              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
+              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-green-100 text-green-700 transition-all duration-300">
                 <PhoneIcon />
               </span>
               <span>
@@ -137,12 +137,12 @@ function Contact() {
               </span>
             </a>
             <a
-              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-green-300 bg-green-100 hover:bg-green-100"
               href="https://github.com/yevintheenura01"
               target="_blank"
               rel="noreferrer"
             >
-              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
+              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-green-100 text-green-700 transition-all duration-300">
                 <GithubIcon />
               </span>
               <span>
@@ -155,12 +155,12 @@ function Contact() {
               </span>
             </a>
             <a
-              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+              className="flex items-center gap-3 rounded-2xl border transition-all duration-300 px-5 py-4 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-green-300 bg-green-100 hover:bg-green-100"
               href="https://www.linkedin.com/in/yevin-theenura-01960a223/"
               target="_blank"
               rel="noreferrer"
             >
-              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-indigo-200 text-indigo-600 transition-all duration-300">
+              <span className="grid h-10 w-10 place-items-center rounded-full dark:bg-cyan-300/15 dark:text-cyan-200 bg-green-100 text-green-700 transition-all duration-300">
                 <LinkedinIcon />
               </span>
               <span>
@@ -183,25 +183,25 @@ function Contact() {
               name="name"
               placeholder="Name"
               required
-              className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-indigo-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none"
+              className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-green-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none"
             />
             <input
               type="email"
               name="email"
               placeholder="Email"
               required
-              className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-indigo-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none"
+              className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-green-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none"
             />
             <textarea
               name="message"
               placeholder="Message"
               rows={5}
               required
-              className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-indigo-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none md:col-span-2"
+              className="rounded-xl border transition-all duration-300 px-5 py-4 dark:border-white/15 dark:bg-slate-900/70 dark:text-slate-100 dark:placeholder:text-slate-400 dark:focus:border-cyan-200/50 border-green-300 bg-white text-slate-900 placeholder:text-slate-500 focus:border-indigo-500/50 focus:outline-none md:col-span-2"
             />
             <button
               type="submit"
-              className="rounded-full border transition-all duration-300 px-6 py-3 text-base font-semibold dark:border-cyan-300/35 dark:bg-cyan-300/15 dark:text-cyan-100 dark:hover:bg-cyan-300/25 border-indigo-400 bg-indigo-100 text-indigo-700 hover:bg-indigo-200 md:col-span-2 md:justify-self-start"
+              className="rounded-full border transition-all duration-300 px-6 py-3 text-base font-semibold dark:border-cyan-300/35 dark:bg-cyan-300/15 dark:text-cyan-100 dark:hover:bg-cyan-300/25 border-green-400 bg-green-100 text-green-800 hover:bg-green-100 md:col-span-2 md:justify-self-start"
             >
               Send Message
             </button>

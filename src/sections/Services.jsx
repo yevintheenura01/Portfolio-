@@ -23,7 +23,7 @@ function Services() {
             whileHover={{ y: -6 }}
             className="glass-card rounded-[1.75rem] p-8"
           >
-            <h3 className="font-display text-2xl dark:text-white text-indigo-900 transition-colors duration-300">
+            <h3 className="font-display text-2xl dark:text-white text-green-800 transition-colors duration-300">
               <span className="mr-2">{service.icon}</span>
               {service.title}
             </h3>

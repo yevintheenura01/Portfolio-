@@ -6,7 +6,7 @@ const projects = [
     tags: ["MERN Stack", "React", "MongoDB", "Node.js", "Figma"],
     demo: "#",
     source: "#",
-    image: "/images/projects/rice-mill.png",
+    image: "/images/projects/Rice_mill.png",
   },
   {
     title: "Clothing Website",
@@ -15,7 +15,7 @@ const projects = [
     tags: ["React", "Vite", "MERN Stack", "Tailwind CSS", "MongoDB"],
     demo: "#",
     source: "#",
-    image: "/images/projects/clothing-website.png",
+    image: "/images/projects/clothing.png",
   },
   {
     title: "Online Bus Ticket Reservation System",
@@ -30,7 +30,7 @@ const projects = [
     ],
     demo: "#",
     source: "#",
-    image: "/images/projects/bus-booking.png",
+    image: "/images/projects/busTicket.png",
   },
   {
     title: "Note App",
@@ -39,7 +39,7 @@ const projects = [
     tags: ["Kotlin", "Android", "Mobile Development", "UI/UX Design"],
     demo: "#",
     source: "#",
-    image: "/images/projects/note-app.png",
+    image: "/images/projects/note_app.png",
   },
 ];
 

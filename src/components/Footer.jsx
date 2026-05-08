@@ -45,7 +45,7 @@ function Footer() {
               href="https://github.com/yevintheenura01"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border transition-all duration-300 px-4 py-2 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+              className="inline-flex items-center gap-2 rounded-full border transition-all duration-300 px-4 py-2 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-green-300 bg-green-100 hover:bg-green-100"
             >
               <GithubIcon />
               GitHub
@@ -54,7 +54,7 @@ function Footer() {
               href="https://www.linkedin.com/in/yevin-theenura-01960a223/"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border transition-all duration-300 px-4 py-2 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-indigo-300 bg-indigo-100 hover:bg-indigo-200"
+              className="inline-flex items-center gap-2 rounded-full border transition-all duration-300 px-4 py-2 dark:border-white/20 dark:bg-white/5 dark:hover:bg-white/10 border-green-300 bg-green-100 hover:bg-green-100"
             >
               <LinkedinIcon />
               LinkedIn
