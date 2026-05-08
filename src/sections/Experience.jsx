@@ -23,10 +23,10 @@ function Experience() {
             className="glass-card rounded-[1.75rem] p-8"
           >
             <div className="flex flex-wrap items-center justify-between gap-3">
-              <h3 className="font-display text-2xl dark:text-white text-indigo-900 transition-colors duration-300">
+              <h3 className="font-display text-2xl dark:text-white text-emerald-900 transition-colors duration-300">
                 {item.role}
               </h3>
-              <p className="text-base dark:text-cyan-200 text-indigo-600 transition-colors duration-300">
+              <p className="text-base dark:text-cyan-200 text-emerald-600 transition-colors duration-300">
                 {item.period}
               </p>
             </div>
@@ -34,7 +34,7 @@ function Experience() {
               <p className="text-lg dark:text-slate-300 text-slate-700 transition-colors duration-300">
                 {item.company}
               </p>
-              <span className="rounded-full border transition-all duration-300 px-3 py-1 text-sm dark:border-white/20 dark:bg-white/5 dark:text-slate-200 border-indigo-300 bg-indigo-100 text-indigo-700">
+              <span className="rounded-full border transition-all duration-300 px-3 py-1 text-sm dark:border-white/20 dark:bg-white/5 dark:text-slate-200 border-emerald-200 bg-emerald-100 text-emerald-700">
                 {item.type}
               </span>
             </div>

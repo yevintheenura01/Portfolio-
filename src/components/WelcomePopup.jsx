@@ -56,7 +56,7 @@ export function WelcomePopup() {
               className={`relative rounded-2xl overflow-hidden transition-all duration-300 ${
                 theme === "dark"
                   ? "bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-cyan-300/30"
-                  : "bg-gradient-to-br from-white via-slate-50 to-white border border-indigo-300/50"
+                  : "bg-gradient-to-br from-white via-slate-50 to-white border border-emerald-200/50"
               }`}
             >
               {/* Glitch Background Effect */}
@@ -72,7 +72,7 @@ export function WelcomePopup() {
                   className={`absolute top-4 right-4 p-2 rounded-lg transition-all duration-200 hover:scale-110 ${
                     theme === "dark"
                       ? "text-slate-400 hover:text-cyan-300 hover:bg-cyan-300/10"
-                      : "text-slate-600 hover:text-indigo-600 hover:bg-indigo-100"
+                      : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-100"
                   }`}
                 >
                   <CloseIcon />
@@ -90,7 +90,7 @@ export function WelcomePopup() {
                   {/* Subtitle */}
                   <p
                     className={`text-sm uppercase tracking-[0.2em] font-semibold ${
-                      theme === "dark" ? "text-cyan-300" : "text-indigo-600"
+                      theme === "dark" ? "text-cyan-300" : "text-emerald-600"
                     }`}
                   >
                     Code × Design × Innovation
@@ -115,7 +115,7 @@ export function WelcomePopup() {
                         className={`text-xs font-bold px-3 py-1 rounded-full border transition-all duration-300 ${
                           theme === "dark"
                             ? "border-cyan-300/50 bg-cyan-300/10 text-cyan-200"
-                            : "border-indigo-300/50 bg-indigo-100 text-indigo-700"
+                            : "border-emerald-200/50 bg-emerald-100 text-emerald-700"
                         }`}
                       >
                         {tech}
@@ -131,7 +131,7 @@ export function WelcomePopup() {
                     className={`w-full mt-6 px-6 py-3 rounded-lg font-semibold transition-all duration-300 border ${
                       theme === "dark"
                         ? "border-cyan-300/40 bg-cyan-300/10 text-cyan-100 hover:bg-cyan-300/20"
-                        : "border-indigo-400 bg-indigo-100 text-indigo-700 hover:bg-indigo-200"
+                        : "border-emerald-300 bg-emerald-100 text-emerald-700 hover:bg-emerald-100"
                     }`}
                   >
                     Explore My Portfolio

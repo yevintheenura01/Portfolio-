@@ -29,7 +29,7 @@ function About() {
           className="mt-10 grid gap-8 sm:grid-cols-2"
         >
           <div className="glass-card rounded-[1.75rem] p-8">
-            <h3 className="font-display text-2xl dark:text-white text-indigo-900 transition-colors duration-300">
+            <h3 className="font-display text-2xl dark:text-white text-emerald-900 transition-colors duration-300">
               Professional Background
             </h3>
             <p className="mt-4 leading-8 dark:text-slate-300 text-slate-700 transition-colors duration-300">
@@ -41,7 +41,7 @@ function About() {
           </div>
 
           <div className="glass-card rounded-[1.75rem] p-8">
-            <h3 className="font-display text-2xl dark:text-white text-indigo-900 transition-colors duration-300">
+            <h3 className="font-display text-2xl dark:text-white text-emerald-900 transition-colors duration-300">
               Core Competencies
             </h3>
             <p className="mt-4 leading-8 dark:text-slate-300 text-slate-700 transition-colors duration-300">
@@ -57,14 +57,14 @@ function About() {
           {...revealUp(0.3)}
           className="mt-8 glass-card rounded-[1.75rem] p-8"
         >
-          <h3 className="font-display text-2xl dark:text-white text-indigo-900 transition-colors duration-300 mb-6">
+          <h3 className="font-display text-2xl dark:text-white text-emerald-900 transition-colors duration-300 mb-6">
             My Approach
           </h3>
           <div className="space-y-4">
             <div className="flex gap-4">
               <span className="text-2xl">🎯</span>
               <div>
-                <p className="font-semibold dark:text-white text-indigo-900 transition-colors duration-300">
+                <p className="font-semibold dark:text-white text-emerald-900 transition-colors duration-300">
                   Development Philosophy
                 </p>
                 <p className="mt-1 dark:text-slate-300 text-slate-700 transition-colors duration-300">
@@ -76,7 +76,7 @@ function About() {
             <div className="flex gap-4">
               <span className="text-2xl">💡</span>
               <div>
-                <p className="font-semibold dark:text-white text-indigo-900 transition-colors duration-300">
+                <p className="font-semibold dark:text-white text-emerald-900 transition-colors duration-300">
                   Soft Skills Strength
                 </p>
                 <p className="mt-1 dark:text-slate-300 text-slate-700 transition-colors duration-300">
@@ -89,7 +89,7 @@ function About() {
             <div className="flex gap-4">
               <span className="text-2xl">🚀</span>
               <div>
-                <p className="font-semibold dark:text-white text-indigo-900 transition-colors duration-300">
+                <p className="font-semibold dark:text-white text-emerald-900 transition-colors duration-300">
                   Continuous Growth
                 </p>
                 <p className="mt-1 dark:text-slate-300 text-slate-700 transition-colors duration-300">

@@ -27,15 +27,15 @@ function Certifications() {
               {...revealUp(index * 0.08)}
               className="glass-card rounded-[1.75rem] p-8 overflow-hidden group cursor-pointer hover:scale-105 transition-transform duration-300"
             >
-              <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full dark:bg-cyan-300/10 bg-indigo-300/10 blur-2xl group-hover:blur-lg transition-all duration-300" />
+              <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full dark:bg-cyan-300/10 bg-emerald-300/10 blur-2xl group-hover:blur-lg transition-all duration-300" />
 
               <div className="relative">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
-                    <h3 className="font-display text-xl dark:text-white text-indigo-900 transition-colors duration-300">
+                    <h3 className="font-display text-xl dark:text-white text-emerald-900 transition-colors duration-300">
                       {cert.title}
                     </h3>
-                    <p className="mt-1 text-sm dark:text-cyan-200 text-indigo-600 transition-colors duration-300">
+                    <p className="mt-1 text-sm dark:text-cyan-200 text-emerald-600 transition-colors duration-300">
                       {cert.issuer}
                     </p>
                     <p className="mt-2 text-xs uppercase tracking-widest dark:text-slate-400 text-slate-500 transition-colors duration-300">
@@ -52,7 +52,7 @@ function Certifications() {
                   {cert.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="inline-block rounded-full px-3 py-1 text-xs font-medium dark:bg-white/5 dark:text-slate-300 dark:border dark:border-white/10 bg-indigo-100/60 text-indigo-700 border border-indigo-200 transition-all duration-300"
+                      className="inline-block rounded-full px-3 py-1 text-xs font-medium dark:bg-white/5 dark:text-slate-300 dark:border dark:border-white/10 bg-emerald-100/60 text-emerald-700 border border-emerald-200 transition-all duration-300"
                     >
                       {skill}
                     </span>

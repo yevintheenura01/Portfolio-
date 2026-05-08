@@ -68,12 +68,12 @@ function Navbar() {
         className={cn(
           "pointer-events-auto mx-auto flex w-full max-w-7xl items-center justify-between gap-6 rounded-3xl border px-6 py-4 md:px-8 md:py-5 transition-colors duration-300",
           "dark:border-white/20 dark:bg-slate-950/80 dark:shadow-glass dark:backdrop-blur-xl",
-          "border-indigo-200 bg-white/85 shadow-lg backdrop-blur-lg",
+          "border-emerald-200 bg-white/85 shadow-lg backdrop-blur-lg",
         )}
       >
         <a
           href="#hero"
-          className="font-display text-2xl tracking-wide dark:text-white text-indigo-900 transition-colors hover:dark:text-cyan-200 hover:text-indigo-600"
+          className="font-display text-2xl tracking-wide dark:text-white text-emerald-900 transition-colors hover:dark:text-cyan-200 hover:text-emerald-600"
         >
           Portfolio
         </a>
@@ -83,7 +83,7 @@ function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="transition-colors hover:dark:text-cyan-200 hover:text-indigo-600"
+              className="transition-colors hover:dark:text-cyan-200 hover:text-emerald-600"
             >
               {link.label}
             </a>
@@ -99,7 +99,7 @@ function Navbar() {
             className={cn(
               "p-2 rounded-full transition-colors duration-300",
               "dark:text-yellow-300 dark:hover:bg-yellow-300/10",
-              "text-indigo-600 hover:bg-indigo-100",
+              "text-emerald-600 hover:bg-emerald-100",
             )}
             aria-label="Toggle theme"
           >
@@ -109,7 +109,7 @@ function Navbar() {
           {/* Contact Button */}
           <a
             href="#contact"
-            className="rounded-full border transition-all duration-300 px-5 py-2.5 text-sm font-semibold dark:border-cyan-300/40 dark:bg-cyan-300/15 dark:text-cyan-100 dark:hover:bg-cyan-300/25 border-indigo-400 bg-indigo-100 text-indigo-700 hover:bg-indigo-200"
+            className="rounded-full border transition-all duration-300 px-5 py-2.5 text-sm font-semibold dark:border-cyan-300/40 dark:bg-cyan-300/15 dark:text-cyan-100 dark:hover:bg-cyan-300/25 border-emerald-300 bg-emerald-100 text-emerald-700 hover:bg-emerald-100"
           >
             Contact
           </a>

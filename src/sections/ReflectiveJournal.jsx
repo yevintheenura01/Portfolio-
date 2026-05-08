@@ -30,14 +30,14 @@ function ReflectiveJournal() {
               <div className="flex items-start gap-4">
                 <div className="mt-1 h-2 w-2 rounded-full dark:bg-cyan-400 bg-indigo-600 flex-shrink-0 flex-grow-0" />
                 <div className="flex-1">
-                  <h3 className="font-display text-xl dark:text-white text-indigo-900 transition-colors duration-300">
+                  <h3 className="font-display text-xl dark:text-white text-emerald-900 transition-colors duration-300">
                     {reflection.title}
                   </h3>
                   <p className="mt-3 text-base leading-7 dark:text-slate-300 text-slate-700 transition-colors duration-300">
                     {reflection.description}
                   </p>
-                  <div className="mt-4 rounded-lg dark:bg-white/5 bg-indigo-100/40 p-3 border transition-all duration-300 dark:border-white/10 border-indigo-200">
-                    <p className="text-sm font-semibold dark:text-cyan-200 text-indigo-600 transition-colors duration-300">
+                  <div className="mt-4 rounded-lg dark:bg-white/5 bg-emerald-100/40 p-3 border transition-all duration-300 dark:border-white/10 border-emerald-200">
+                    <p className="text-sm font-semibold dark:text-cyan-200 text-emerald-600 transition-colors duration-300">
                       Key Learning:
                     </p>
                     <p className="mt-1 text-sm dark:text-slate-300 text-slate-700 transition-colors duration-300">

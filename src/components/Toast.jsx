@@ -98,7 +98,7 @@ export function ResumeButton({ showToast }) {
       disabled={isLoading}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className="inline-flex items-center gap-2 rounded-full border transition-all duration-300 px-6 py-3 font-semibold dark:border-cyan-300/40 dark:bg-cyan-300/15 dark:text-cyan-100 dark:hover:bg-cyan-300/25 border-indigo-400 bg-indigo-100 text-indigo-700 hover:bg-indigo-200 disabled:opacity-50 disabled:cursor-not-allowed"
+      className="inline-flex items-center gap-2 rounded-full border transition-all duration-300 px-6 py-3 font-semibold dark:border-cyan-300/40 dark:bg-cyan-300/15 dark:text-cyan-100 dark:hover:bg-cyan-300/25 border-emerald-300 bg-emerald-100 text-emerald-700 hover:bg-emerald-100 disabled:opacity-50 disabled:cursor-not-allowed"
     >
       {isLoading ? (
         <>

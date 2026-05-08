@@ -32,7 +32,7 @@ function Skills() {
                 <li key={item.name}>
                   <div className="mb-1 flex items-center justify-between text-sm">
                     <span>{item.name}</span>
-                    <span className="rounded-full border transition-all duration-300 px-2 py-0.5 text-xs dark:border-white/20 dark:text-slate-200 border-indigo-300 bg-indigo-100 text-indigo-700">
+                    <span className="rounded-full border transition-all duration-300 px-2 py-0.5 text-xs dark:border-white/20 dark:text-slate-200 border-emerald-200 bg-emerald-100 text-emerald-700">
                       {item.level}%
                     </span>
                   </div>

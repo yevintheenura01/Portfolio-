@@ -13,9 +13,9 @@ function Button({
 
   const variants = {
     primary:
-      "dark:border-cyan-300/40 dark:bg-cyan-300/15 dark:text-cyan-100 dark:hover:border-cyan-200 dark:hover:bg-cyan-300/25 border-indigo-400 bg-indigo-100 text-indigo-700 hover:bg-indigo-200",
+      "dark:border-cyan-300/40 dark:bg-cyan-300/15 dark:text-cyan-100 dark:hover:border-cyan-200 dark:hover:bg-cyan-300/25 border-emerald-300 bg-emerald-100 text-emerald-700 hover:bg-emerald-100",
     ghost:
-      "dark:border-slate-300/20 dark:bg-white/5 dark:text-slate-200 dark:hover:border-slate-200/40 dark:hover:bg-white/10 border-indigo-300 bg-white/50 text-indigo-700 hover:bg-indigo-100",
+      "dark:border-slate-300/20 dark:bg-white/5 dark:text-slate-200 dark:hover:border-slate-200/40 dark:hover:bg-white/10 border-emerald-200 bg-white/50 text-emerald-700 hover:bg-emerald-100",
   };
 
   const handleClick = (e) => {

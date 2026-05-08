@@ -152,7 +152,7 @@ function SectionRail() {
               isDragging
                 ? theme === "dark"
                   ? "text-cyan-300"
-                  : "text-indigo-600"
+                  : "text-emerald-600"
                 : theme === "dark"
                   ? "text-slate-500"
                   : "text-slate-400"
@@ -193,7 +193,7 @@ function SectionRail() {
                       isActive
                         ? theme === "dark"
                           ? "text-cyan-200"
-                          : "text-indigo-600"
+                          : "text-emerald-600"
                         : theme === "dark"
                           ? "text-slate-400"
                           : "text-slate-600"
