@@ -43,7 +43,7 @@ function ScrollProgress() {
       >
         <div
           className={`glass-card flex items-center gap-3 rounded-full px-4 py-2 text-sm transition-all duration-300 ${
-            theme === "dark" ? "text-slate-100" : "text-emerald-900"
+            theme === "dark" ? "text-slate-100" : "text-green-800"
           }`}
         >
           <span
@@ -55,14 +55,14 @@ function ScrollProgress() {
           />
           <span
             className={`uppercase tracking-[0.22em] transition-colors duration-300 ${
-              theme === "dark" ? "text-slate-400" : "text-emerald-700"
+              theme === "dark" ? "text-slate-400" : "text-green-800"
             }`}
           >
             Scroll
           </span>
           <span
             className={`font-semibold transition-colors duration-300 ${
-              theme === "dark" ? "text-cyan-100" : "text-emerald-600"
+              theme === "dark" ? "text-cyan-100" : "text-green-700"
             }`}
           >
             {progressText}%
