@@ -10,9 +10,9 @@ function Projects() {
       className="mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 py-20"
     >
       <motion.div {...revealUp()}>
-        <p className="section-kicker">Projects</p>
+        <p className="section-kicker">Chapter 03</p>
         <h2 className="section-title text-4xl sm:text-5xl">
-          Featured projects that demonstrate real capability
+          Builds That Show How I Work
         </h2>
       </motion.div>
 

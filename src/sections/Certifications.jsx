@@ -10,9 +10,9 @@ function Certifications() {
     >
       <div className="w-full">
         <motion.div {...revealUp()}>
-          <p className="section-kicker">Skill Development</p>
+          <p className="section-kicker">Chapter 05</p>
           <h2 className="section-title text-4xl sm:text-5xl">
-            Certifications & Learning
+            Continuous Learning
           </h2>
           <p className="mt-4 max-w-3xl text-lg dark:text-slate-300 text-slate-700 transition-colors duration-300">
             Courses and certifications I've completed to continuously improve my

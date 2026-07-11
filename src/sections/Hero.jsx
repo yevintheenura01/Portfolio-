@@ -18,7 +18,7 @@ function Hero() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-sm uppercase tracking-[0.3em] dark:text-cyan-200 text-green-700 transition-colors duration-300"
           >
-            Full-Stack Developer | UI/UX Designer
+            Full-Stack Developer | AI/ML Enthusiast
           </motion.p>
 
           <motion.h1
@@ -37,9 +37,9 @@ function Hero() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
             className="mt-6 max-w-2xl text-xl dark:text-slate-300 text-slate-800 transition-colors duration-300"
           >
-            IT undergraduate with expertise in full-stack web development (MERN
-            stack), UI/UX design, and graphic design. Passionate about creating
-            intuitive applications that solve real-world problems.
+            I build end-to-end applications with the MERN stack and explore
+            AI/ML to solve practical problems. This portfolio is a walkthrough
+            of my growth from fundamentals to production-ready engineering work.
           </motion.p>
 
           <motion.div
@@ -48,9 +48,9 @@ function Hero() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
             className="mt-8 flex flex-wrap gap-3"
           >
-            <Button href="#projects">View Projects</Button>
+            <Button href="#about">Start the Journey</Button>
             <Button href="#contact" variant="ghost">
-              Contact Me
+              Let's Connect
             </Button>
           </motion.div>
         </div>

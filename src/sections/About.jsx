@@ -12,15 +12,16 @@ function About() {
           {...revealUp()}
           className="glass-card rounded-[2rem] p-10 sm:p-14"
         >
-          <p className="section-kicker">Introduction</p>
-          <h2 className="section-title text-4xl sm:text-5xl">About Me</h2>
+          <p className="section-kicker">Chapter 01</p>
+          <h2 className="section-title text-4xl sm:text-5xl">
+            Where I Started
+          </h2>
           <p className="mt-6 max-w-4xl text-lg leading-8 dark:text-slate-300 text-slate-700 transition-colors duration-300">
             I'm a fourth-year IT undergraduate with a GPA of 3.22 from Sri Lanka
-            Institute of Information Technology (SLIIT). With expertise in
-            full-stack web development (MERN stack), UI/UX design, and a
-            background in graphic design, I'm passionate about using technology
-            to address real-world challenges through intuitive and scalable
-            applications.
+            Institute of Information Technology (SLIIT). My main focus is
+            full-stack engineering with the MERN stack, supported by growing
+            hands-on work in AI/ML. I enjoy building reliable systems that can
+            solve real user and business problems at scale.
           </p>
         </motion.div>
 
@@ -34,9 +35,9 @@ function About() {
             </h3>
             <p className="mt-4 leading-8 dark:text-slate-300 text-slate-700 transition-colors duration-300">
               Full-stack developer intern at Sri Lanka Telecom PLC with hands-on
-              experience in MERN stack development. Previous roles include
-              graphic design and data management, bringing a unique perspective
-              combining technical expertise with design thinking.
+              experience in MERN stack development. Previous roles include data
+              management and design work, which strengthened execution,
+              communication, and delivery under real project constraints.
             </p>
           </div>
 
@@ -45,10 +46,10 @@ function About() {
               Core Competencies
             </h3>
             <p className="mt-4 leading-8 dark:text-slate-300 text-slate-700 transition-colors duration-300">
-              Full-stack MERN development, responsive UI design, database
-              management, UI/UX design principles, and strong problem-solving
-              abilities. Proficient in multiple programming languages and design
-              tools with proven ability to deliver quality work.
+              Full-stack MERN development, API design, database management,
+              clean frontend implementation, and practical AI/ML exploration.
+              Proficient in multiple programming languages with a strong
+              problem-solving mindset.
             </p>
           </div>
         </motion.div>
@@ -68,8 +69,8 @@ function About() {
                   Development Philosophy
                 </p>
                 <p className="mt-1 dark:text-slate-300 text-slate-700 transition-colors duration-300">
-                  Build scalable, user-centric applications that combine
-                  technical excellence with intuitive design.
+                  Build scalable applications with strong architecture,
+                  maintainable code, and measurable product impact.
                 </p>
               </div>
             </div>
@@ -93,9 +94,8 @@ function About() {
                   Continuous Growth
                 </p>
                 <p className="mt-1 dark:text-slate-300 text-slate-700 transition-colors duration-300">
-                  Dedicated to ongoing learning, currently completing
-                  certificates in front-end development and web design while
-                  advancing core competencies.
+                  Dedicated to continuous learning in system design, cloud-ready
+                  full-stack delivery, and applied AI/ML.
                 </p>
               </div>
             </div>

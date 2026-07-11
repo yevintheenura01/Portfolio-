@@ -1,6 +1,5 @@
 import Hero from "../sections/Hero.jsx";
 import About from "../sections/About.jsx";
-import ReflectiveJournal from "../sections/ReflectiveJournal.jsx";
 import CareerDevelopmentPlan from "../sections/CareerDevelopmentPlan.jsx";
 import Experience from "../sections/Experience.jsx";
 import Certifications from "../sections/Certifications.jsx";
@@ -13,12 +12,11 @@ function Home() {
     <>
       <Hero />
       <About />
-      <ReflectiveJournal />
-      <CareerDevelopmentPlan />
-      <Experience />
-      <Certifications />
       <Skills />
       <Projects />
+      <Experience />
+      <Certifications />
+      <CareerDevelopmentPlan />
       <Contact />
     </>
   );
