@@ -10,13 +10,13 @@ function CareerDevelopmentPlan() {
     >
       <div className="w-full">
         <motion.div {...revealUp()}>
-          <p className="section-kicker">Future Path</p>
+          <p className="section-kicker">Chapter 06</p>
           <h2 className="section-title text-4xl sm:text-5xl">
-            Career Development Plan
+            What I Am Building Toward
           </h2>
           <p className="mt-4 max-w-3xl text-lg dark:text-slate-300 text-slate-700 transition-colors duration-300">
-            A strategic roadmap for my professional growth over the next 5
-            years.
+            A practical roadmap for my next stage as a full-stack engineer with
+            deeper AI/ML capability.
           </p>
         </motion.div>
 

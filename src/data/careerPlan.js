@@ -1,13 +1,13 @@
 const careerPlan = [
   {
-    phase: "Graduation & Consolidation (Now - 6 months)",
+    phase: "Graduation & Consolidation (Current Phase)",
     objectives: [
-      "Complete BSc (Hons) degree with strong academic performance (GPA 3.22+)",
+      "Graduate with BSc (Hons) degree around Sep/Oct 2026 while maintaining strong academic performance",
       "Finalize Sri Lanka Telecom internship and document achievements",
       "Build 1-2 portfolio projects showcasing full-stack expertise",
       "Network with tech professionals and seek mentorship",
     ],
-    timeline: "2025 Q2-Q3",
+    timeline: "Sep-Oct 2026",
   },
   {
     phase: "Professional Entry (6-18 months)",
@@ -17,7 +17,7 @@ const careerPlan = [
       "Contribute to open-source projects",
       "Develop leadership and communication skills",
     ],
-    timeline: "2025 Q4 - 2026 Q2",
+    timeline: "Nov 2026 - Oct 2027",
   },
   {
     phase: "Skill Expansion (18-36 months)",
@@ -27,7 +27,7 @@ const careerPlan = [
       "Explore emerging technologies (AI/ML integration, cloud platforms)",
       "Consider specialization path (Full-Stack, Backend, or DevOps)",
     ],
-    timeline: "2026 Q3 - 2027 Q4",
+    timeline: "Nov 2027 - Oct 2029",
   },
   {
     phase: "Career Growth & Leadership (3-5 years)",
@@ -37,7 +37,7 @@ const careerPlan = [
       "Explore remote work opportunities with global companies",
       "Consider entrepreneurship or technical consulting",
     ],
-    timeline: "2028 - 2030",
+    timeline: "2030 - 2031+",
   },
 ];
 

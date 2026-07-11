@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Yevin Theenura Portfolio</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 14mm;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f7faf8;
+        color: #17251f;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.45;
+      }
+
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr 132px;
+        gap: 24px;
+        align-items: center;
+        padding: 26px;
+        border: 1px solid #b7ddc1;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #ffffff 0%, #e8f5ec 100%);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        color: #14532d;
+        font-size: 34pt;
+        line-height: 1;
+      }
+
+      h2 {
+        margin-bottom: 12px;
+        color: #14532d;
+        font-size: 19pt;
+      }
+
+      h3 {
+        color: #183d2a;
+        font-size: 12pt;
+      }
+
+      section {
+        margin-top: 18px;
+        padding: 18px;
+        border: 1px solid #c7e4cd;
+        border-radius: 14px;
+        background: #ffffff;
+        break-inside: avoid;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      .subtitle {
+        margin-bottom: 12px;
+        color: #157347;
+        font-size: 11pt;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .summary {
+        max-width: 680px;
+        color: #334155;
+        font-size: 11.5pt;
+      }
+
+      .profile {
+        width: 132px;
+        height: 132px;
+        border: 5px solid #dff2e4;
+        border-radius: 18px;
+        object-fit: cover;
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        margin-top: 18px;
+        color: #224137;
+        font-size: 9.5pt;
+      }
+
+      .contact span {
+        white-space: nowrap;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .project {
+        display: grid;
+        grid-template-columns: 124px 1fr;
+        gap: 14px;
+        padding: 12px;
+        border: 1px solid #dcefe1;
+        border-radius: 12px;
+        background: #fbfdfb;
+        break-inside: avoid;
+      }
+
+      .project + .project {
+        margin-top: 10px;
+      }
+
+      .project img {
+        width: 124px;
+        height: 84px;
+        border-radius: 8px;
+        object-fit: cover;
+        background: #e5efe8;
+      }
+
+      .compact-card,
+      .timeline-item {
+        padding: 12px;
+        border: 1px solid #dcefe1;
+        border-radius: 12px;
+        background: #fbfdfb;
+        break-inside: avoid;
+      }
+
+      .timeline-item + .timeline-item {
+        margin-top: 10px;
+      }
+
+      .meta {
+        margin-bottom: 4px;
+        color: #2f855a;
+        font-size: 8.8pt;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .company {
+        margin: 2px 0 6px;
+        color: #475569;
+        font-weight: 700;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 8px;
+      }
+
+      .tags span {
+        padding: 3px 7px;
+        border-radius: 999px;
+        background: #e3f4e8;
+        color: #166534;
+        font-size: 8.4pt;
+        font-weight: 700;
+      }
+
+      ul {
+        margin: 8px 0 0;
+        padding-left: 18px;
+      }
+
+      li + li {
+        margin-top: 3px;
+      }
+
+      .learning {
+        margin-top: 8px;
+        color: #166534;
+        font-weight: 700;
+      }
+
+      .page-break {
+        break-before: page;
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p class="subtitle">Full-Stack Developer | UI/UX Designer</p>
+          <h1>Yevin Theenura</h1>
+          <p class="summary">
+            Fourth-year IT undergraduate at Sri Lanka Institute of Information Technology with a GPA of 3.22.
+            Experienced in MERN stack development, responsive UI design, database management, and graphic design.
+          </p>
+          <div class="contact">
+            <span>Email: don.yevin.dev@gmail.com</span>
+            <span>Phone: +94 77 628 3842</span>
+            <span>GitHub: github.com/yevintheenura01</span>
+            <span>LinkedIn: Yevin Theenura</span>
+          </div>
+        </div>
+        <img class="profile" src="file:///F:/GIT_Projects/Portfolio-/public/images/profile.jpeg" alt="Yevin Theenura">
+      </header>
+
+      <section>
+        <h2>Professional Profile</h2>
+        <p>
+          Full-stack developer intern at Sri Lanka Telecom PLC with hands-on experience building responsive React
+          interfaces, server-side applications, and MongoDB-backed features. I combine technical delivery with a design
+          background from graphic design roles and certifications, helping me create user-centered digital products.
+        </p>
+      </section>
+
+      <section>
+        <h2>Featured Projects</h2>
+        
+      <article class="project">
+        <img src="file:///F:/GIT_Projects/Portfolio-/public/images/projects/Rice_mill.png" alt="Rice Mill Management System">
+        <div>
+          <h3>Rice Mill Management System</h3>
+          <p>Full-stack web application for managing rice mill operations. Features include inventory tracking, order management, and production scheduling with UI design in Figma.</p>
+          <div class="tags"><span>MERN Stack</span><span>React</span><span>MongoDB</span><span>Node.js</span><span>Figma</span></div>
+        </div>
+      </article>
+    
+      <article class="project">
+        <img src="file:///F:/GIT_Projects/Portfolio-/public/images/projects/clothing.png" alt="Clothing Website">
+        <div>
+          <h3>Clothing Website</h3>
+          <p>E-commerce platform for clothing sales built with modern web technologies. Implemented responsive design and user-friendly interface using React and Vite for optimal performance.</p>
+          <div class="tags"><span>React</span><span>Vite</span><span>MERN Stack</span><span>Tailwind CSS</span><span>MongoDB</span></div>
+        </div>
+      </article>
+    
+      <article class="project">
+        <img src="file:///F:/GIT_Projects/Portfolio-/public/images/projects/busTicket.png" alt="Online Bus Ticket Reservation System">
+        <div>
+          <h3>Online Bus Ticket Reservation System</h3>
+          <p>Object-oriented programming project featuring a web-based bus ticket booking system. Built using Java web technologies with Apache Tomcat server for ticket management and reservations.</p>
+          <div class="tags"><span>Java</span><span>OOP</span><span>Apache Tomcat</span><span>Web Technologies</span><span>Database Design</span></div>
+        </div>
+      </article>
+    
+      <article class="project">
+        <img src="file:///F:/GIT_Projects/Portfolio-/public/images/projects/note_app.png" alt="Note App">
+        <div>
+          <h3>Note App</h3>
+          <p>Mobile application for note-taking and organization. Developed using Kotlin for Android platform with intuitive UI and local storage capabilities.</p>
+          <div class="tags"><span>Kotlin</span><span>Android</span><span>Mobile Development</span><span>UI/UX Design</span></div>
+        </div>
+      </article>
+    
+      </section>
+
+      <section class="page-break">
+        <h2>Technical Skills</h2>
+        <div class="grid">
+      <article class="compact-card">
+        <h3>Programming Languages</h3>
+        <p>JavaScript | Python | Java | C/C++ | HTML/CSS | SQL</p>
+      </article>
+    
+      <article class="compact-card">
+        <h3>Web Development</h3>
+        <p>React &amp; Vite | Node.js &amp; Express | MERN Stack | Responsive Design</p>
+      </article>
+    
+      <article class="compact-card">
+        <h3>Databases</h3>
+        <p>MongoDB | SQL Server | Database Design</p>
+      </article>
+    
+      <article class="compact-card">
+        <h3>Design &amp; Tools</h3>
+        <p>Figma | Adobe Photoshop | Adobe Illustrator | UI/UX Design | Mockflow, Draw.io</p>
+      </article>
+    
+      <article class="compact-card">
+        <h3>Development Tools</h3>
+        <p>Git &amp; GitHub | VS Code | Eclipse | Android Studio</p>
+      </article>
+    
+      <article class="compact-card">
+        <h3>Soft Skills</h3>
+        <p>Problem Solving | Communication | Team Work | Adaptability | Time Management | Project Management</p>
+      </article>
+    </div>
+      </section>
+
+      <section>
+        <h2>Experience & Education</h2>
+        
+      <article class="timeline-item">
+        <p class="meta">Professional Experience | November 2024 - May 2025</p>
+        <h3>Full-stack Developer Intern (MERN)</h3>
+        <p class="company">Sri Lanka Telecom PLC</p>
+        <p>Developed and implemented responsive user interfaces using React. Built and maintained robust server-side applications. Designed and managed MongoDB databases. Participated in full software development lifecycle with Git/GitHub version control.</p>
+      </article>
+    
+      <article class="timeline-item">
+        <p class="meta">Work Experience | January 2023 - April 2023</p>
+        <h3>Data Entry Operator</h3>
+        <p class="company">Lanka Jathika Sarvodaya Shramadana Sangamaya (Inc)</p>
+        <p>Performed data entry tasks for the World Food Programme project. Managed data efficiently and accurately over a 4-month period as part of the Sarvodaya Colombo District Center team.</p>
+      </article>
+    
+      <article class="timeline-item">
+        <p class="meta">Internship | January 2022 - July 2022</p>
+        <h3>Graphic Designer Intern</h3>
+        <p class="company">DesignWay (Pvt) Ltd</p>
+        <p>Developed creative designs using Adobe Photoshop and Adobe Illustrator. Demonstrated strong organizational and time management skills while collaborating effectively within a team to deliver high-quality work under pressure.</p>
+      </article>
+    
+      <article class="timeline-item">
+        <p class="meta">Education | 2022 - Present</p>
+        <h3>BSc (Hons) in Information Technology</h3>
+        <p class="company">Sri Lanka Institute of Information Technology (SLIIT)</p>
+        <p>Fourth-year undergraduate with current GPA of 3.22. Focus on web application development with proficiency in MERN stack and database management. Dedicated to continuous learning and growth.</p>
+      </article>
+    
+      <article class="timeline-item">
+        <p class="meta">Certification | March 2021 - December 2021</p>
+        <h3>Computer Graphic Design Certification</h3>
+        <p class="company">National Vocational Training Institute (NVTI)</p>
+        <p>NVQ Level 4 certification in Computer Graphic Design, establishing foundation in design principles and tools.</p>
+      </article>
+    
+      </section>
+
+      <section class="page-break">
+        <h2>Certifications</h2>
+        <div class="grid">
+      <article class="compact-card">
+        <p class="meta">Coursera | 28 January 2025</p>
+        <h3>Build a Free Website with WordPress</h3>
+        <p>Course on building and deploying websites using WordPress platform</p>
+        <div class="tags"><span>WordPress</span><span>Web Development</span><span>Site Building</span><span>CMS</span></div>
+      </article>
+    
+      <article class="compact-card">
+        <p class="meta">Meta | 21 January 2025</p>
+        <h3>Introduction to Front-End Development</h3>
+        <p>Comprehensive introduction to front-end development technologies and best practices</p>
+        <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span></div>
+      </article>
+    
+      <article class="compact-card">
+        <p class="meta">CODL, University of Moratuwa | 2025</p>
+        <h3>Web Design for Beginners</h3>
+        <p>Foundational course covering web design principles, UX/UI, and design tools</p>
+        <div class="tags"><span>Web Design</span><span>UX/UI Design</span><span>Design Principles</span><span>Figma</span></div>
+      </article>
+    
+      <article class="compact-card">
+        <p class="meta">National Vocational Training Institute (NVTI) | March 2021 - December 2021</p>
+        <h3>Computer Graphic Design Certification</h3>
+        <p>NVQ Level 4 certification in Computer Graphic Design with expertise in design tools and visual communication</p>
+        <div class="tags"><span>Photoshop</span><span>Illustrator</span><span>Graphic Design</span><span>Visual Communication</span></div>
+      </article>
+    </div>
+      </section>
+
+      <section>
+        <h2>Career Direction</h2>
+        <div class="grid">
+      <article class="compact-card">
+        <p class="meta">Short Term</p>
+        <p>Graduate and secure junior developer role at established tech company</p>
+      </article>
+    
+      <article class="compact-card">
+        <p class="meta">Medium Term</p>
+        <p>Become skilled full-stack engineer with system design expertise</p>
+      </article>
+    
+      <article class="compact-card">
+        <p class="meta">Long Term</p>
+        <p>Lead technical projects remotely for global organization or establish own venture</p>
+      </article>
+    
+      <article class="compact-card">
+        <p class="meta">Target Roles</p>
+        <p>Full-Stack Developer | Backend Engineer | Senior Developer | Tech Lead</p>
+      </article>
+    </div>
+      </section>
+
+      <section>
+        <h2>Development Plan</h2>
+        
+      <article class="timeline-item">
+        <p class="meta">2025 Q2-Q3</p>
+        <h3>Graduation &amp; Consolidation (Now - 6 months)</h3>
+        <ul><li>Complete BSc (Hons) degree with strong academic performance (GPA 3.22+)</li><li>Finalize Sri Lanka Telecom internship and document achievements</li><li>Build 1-2 portfolio projects showcasing full-stack expertise</li><li>Network with tech professionals and seek mentorship</li></ul>
+      </article>
+    
+      <article class="timeline-item">
+        <p class="meta">2025 Q4 - 2026 Q2</p>
+        <h3>Professional Entry (6-18 months)</h3>
+        <ul><li>Secure Junior Full-Stack Developer position at reputable tech company</li><li>Deepen expertise in MERN stack and modern web technologies</li><li>Contribute to open-source projects</li><li>Develop leadership and communication skills</li></ul>
+      </article>
+    
+      <article class="timeline-item">
+        <p class="meta">2026 Q3 - 2027 Q4</p>
+        <h3>Skill Expansion (18-36 months)</h3>
+        <ul><li>Progress to mid-level developer role</li><li>Expand into backend optimization and system design</li><li>Explore emerging technologies (AI/ML integration, cloud platforms)</li><li>Consider specialization path (Full-Stack, Backend, or DevOps)</li></ul>
+      </article>
+    
+      <article class="timeline-item">
+        <p class="meta">2028 - 2030</p>
+        <h3>Career Growth &amp; Leadership (3-5 years)</h3>
+        <ul><li>Achieve senior developer status with specialized expertise</li><li>Mentor junior developers and take technical leadership roles</li><li>Explore remote work opportunities with global companies</li><li>Consider entrepreneurship or technical consulting</li></ul>
+      </article>
+    
+      </section>
+
+      <section class="page-break">
+        <h2>Reflective Journal</h2>
+        <div class="grid">
+      <article class="compact-card">
+        <h3>Full-Stack Development Mastery</h3>
+        <p>My internship at Sri Lanka Telecom PLC as a Full-Stack Developer has been transformative. Working with MERN stack technologies, I&#39;ve learned that true proficiency comes from understanding the complete development lifecycle - from responsive UI design to robust backend architecture and database management.</p>
+        <p class="learning">Key learning: Full-stack expertise requires continuous learning across all layers</p>
+      </article>
+    
+      <article class="compact-card">
+        <h3>From Design to Development</h3>
+        <p>My background in graphic design at DesignWay and Computer Graphic Design certification has given me a unique advantage in web development. I bring strong UI/UX sensibilities to my code, understanding that development isn&#39;t just about functionality—it&#39;s about creating intuitive user experiences.</p>
+        <p class="learning">Key learning: Design thinking enhances technical implementation</p>
+      </article>
+    
+      <article class="compact-card">
+        <h3>Practical Experience &amp; Real-World Impact</h3>
+        <p>Working on diverse projects—from the Rice Mill Management System to the Clothing Website, from Java-based systems to Android apps—has taught me adaptability and problem-solving across different technologies. Each project reinforced that passion for technology is only meaningful when it solves real problems.</p>
+        <p class="learning">Key learning: Diverse experience builds versatility and professional maturity</p>
+      </article>
+    
+      <article class="compact-card">
+        <h3>Professional Growth Through Collaboration</h3>
+        <p>My journey through different roles—from graphic designer to data entry operator to full-stack developer—has emphasized the importance of soft skills. Communication, teamwork, and adaptability have been as crucial to my success as technical skills, preparing me for leadership in tech.</p>
+        <p class="learning">Key learning: Soft skills are the foundation of professional advancement</p>
+      </article>
+    </div>
+      </section>
+    </main>
+  </body>
+</html>

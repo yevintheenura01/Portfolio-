@@ -3,12 +3,13 @@ import { useEffect, useMemo, useState, useRef } from "react";
 import { useThemeContext } from "./ThemeProvider.jsx";
 
 const sectionItems = [
-  { id: "hero", label: "Home" },
-  { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
-  { id: "projects", label: "Projects" },
+  { id: "hero", label: "Intro" },
+  { id: "about", label: "Start" },
+  { id: "skills", label: "Toolkit" },
+  { id: "projects", label: "Builds" },
   { id: "experience", label: "Experience" },
-  { id: "services", label: "Services" },
+  { id: "certifications", label: "Learning" },
+  { id: "career-plan", label: "Roadmap" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -199,7 +200,7 @@ function SectionRail() {
                           : "text-slate-600"
                     }`}
                   >
-                    {String(index + 1).padStart(2, "0")}
+                    {item.label}
                   </span>
                 </a>
               </li>

@@ -9,9 +9,9 @@ function Experience() {
       className="mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 py-20"
     >
       <motion.div {...revealUp()}>
-        <p className="section-kicker">Experience / Education</p>
+        <p className="section-kicker">Chapter 04</p>
         <h2 className="section-title text-4xl sm:text-5xl">
-          Learning path and growth highlights
+          Real-World Experience
         </h2>
       </motion.div>
 

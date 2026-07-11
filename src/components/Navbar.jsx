@@ -3,12 +3,12 @@ import { cn } from "../utils/helpers.js";
 import { useThemeContext } from "./ThemeProvider.jsx";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "Reflections", href: "#reflections" },
-  { label: "Career Plan", href: "#career-plan" },
-  { label: "CV", href: "#experience" },
-  { label: "Certifications", href: "#certifications" },
+  { label: "Start", href: "#about" },
+  { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
+  { label: "Learning", href: "#certifications" },
+  { label: "Roadmap", href: "#career-plan" },
   { label: "Contact", href: "#contact" },
 ];
 
